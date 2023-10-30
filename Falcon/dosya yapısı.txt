@@ -1,0 +1,36 @@
+myfalconproject/
+│
+├── app.py                # Falcon uygulamasının ana dosyası
+├── wsgi.py               # WSGI sunucusu (örneğin, Gunicorn) ile uygulamayı başlatmak için kullanılan dosya
+├── requirements.txt      # Projenin bağımlılıklarını listeleme
+│
+├── myfalconproject/      # Uygulamanın Python paketi
+│   ├── __init__.py
+│   ├── resources/        # API rotaları için Falcon kaynaklarını içeren klasör
+│   │   ├── __init__.py
+│   │   ├── user.py       # Kullanıcı kaynağı için dosya
+│   │   ├── company.py    # Şirket kaynağı için dosya
+│   │   ├── ...           # Diğer kaynaklar
+│   │
+│   ├── middleware/       # Middleware bileşenlerini içeren klasör (isteğe bağlı)
+│   │   ├── __init__.py
+│   │   ├── auth.py       # Kimlik doğrulama gibi middleware dosyaları
+│   │   ├── ...
+│   │
+│   ├── models/           # Veritabanı modellerini içeren klasör (isteğe bağlı)
+│   │   ├── __init__.py
+│   │   ├── user.py       # Kullanıcı modeli
+│   │   ├── company.py    # Şirket modeli
+│   │   ├── ...
+│   │
+│
+├── config/                # Yapılandırma dosyalarını içeren klasör (örneğin, database bağlantısı)
+│   ├── __init__.py
+│   ├── settings.py
+│
+├── tests/                 # Testlerin yer aldığı klasör
+│   ├── __init__.py
+│   ├── test_user.py
+│   ├── test_company.py
+│   ├── ...
+│
